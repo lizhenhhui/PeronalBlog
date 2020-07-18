@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="TakePhoto"
+    android:id="@+id/takePhotoBtn"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="From Album"
+        android:id="@+id/fromAlbumBtn"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/photo_image"
+        android:layout_gravity="center_horizontal"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:hint="请输入标题"
+        android:inputType="text"
+        android:paddingLeft="5dp"
+        android:id="@+id/article_title"
+        android:maxLines="1"
+        android:maxLength="10"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:inputType="text"
+        android:id="@+id/article_content"
+        android:gravity="fill_horizontal"
+        android:paddingLeft="5dp"
+        android:hint="请输入你的文本"/>
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/article_submit"
+    android:text="发布" />
+</LinearLayout>

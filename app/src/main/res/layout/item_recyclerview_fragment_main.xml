@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#fefefe"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_height="150dp">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/item_title"
+    android:text="标题标题标题标题"
+    android:textSize="30dp"
+    android:textColor="#555"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#eee"
+        android:layout_weight="1"
+        android:id="@+id/item_content"
+        android:text="文本文本文本"
+        android:textSize="20dp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:id="@+id/FaBu_User"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="九章算法" />
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_margin="5dp"
+            android:id="@+id/DianZhan_Image"
+            android:layout_toRightOf="@id/FaBu_User"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/item_dianzhan"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:id="@+id/DianZhan_Number"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@id/DianZhan_Image"
+            android:layout_alignTop="@id/DianZhan_Image"
+            android:text="150" />
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_margin="5dp"
+            android:id="@+id/Msg_Image"
+            android:layout_toRightOf="@id/DianZhan_Number"
+            android:layout_alignTop="@id/DianZhan_Image"
+            android:src="@drawable/item_msg"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:id="@+id/Msg_Number"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/Msg_Image"
+            android:layout_alignParentTop="true"
+            android:text="155" />
+    </RelativeLayout>
+</LinearLayout>

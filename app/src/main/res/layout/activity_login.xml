@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Login.LoginActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:orientation="vertical">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/username_Input"
+        android:paddingLeft="20dp"
+        android:inputType="text"
+        android:hint="请输入你的账号"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/password_Input"
+        android:inputType="textPassword"
+        android:paddingLeft="20dp"
+        android:hint="请输入你的密码"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/login_btn"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="登录"/>
+    <CheckedTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/register_text"
+        android:text="注册账号"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="right"/>
+</LinearLayout>
+</RelativeLayout>
