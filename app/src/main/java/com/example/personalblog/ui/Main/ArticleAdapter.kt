@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.personalblog.R
+import com.example.personalblog.logic.model.Article
 
 class ArticleAdapter (val articleList:List<Article>): RecyclerView.Adapter<ArticleAdapter.ViewHolder>(){
 
